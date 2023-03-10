@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif;
+    transition: .6s ease-out;
+}
+
+.body {
+    background: black;
+}
+
+.clock {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 100px;
+    letter-spacing: 7px;
+}
+.change-color{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 150px;
+}
+.c-c{
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-white {
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-white:hover{
+    background: white;
+    color: black;
+}
+
+.btn-random{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 150px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-random:hover{
+    background: white;
+    color: black;
+}
+
+.btn-black {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-black:hover{
+    background: white;
+    color: black;
+}
+.digital-clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.clock.active,.c-c.active{
+    color: black;
+}
+.btn-white.active,.btn-black.active,.btn-random.active{
+    color: black;
+    border: 2px solid black;
+}
+.btn-white.active:hover,.btn-black.active:hover,.btn-random.active:hover{
+    background: black;
+    color: white;
+}
+.digital-clock.active{
+    border: 2px solid black;
+}
+
+.body.active {
+    background: white;
+}
